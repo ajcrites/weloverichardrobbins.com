@@ -9,7 +9,7 @@ resource "netlify_site" netlify_site {
   custom_domain = "${var.site_name}"
 
   repo {
-    command = "yarn scutage src"
+    command = "yarn scutage"
     deploy_key_id = "${netlify_deploy_key.key.id}"
     dir = "dist"
     provider = "github"
